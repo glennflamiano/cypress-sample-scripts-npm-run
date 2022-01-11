@@ -19,6 +19,7 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+  workingDirectory: '$(Build.SourcesDirectory)/cypress-sample-scripts-npm-run'
 
 - task: Npm@1
   inputs:
